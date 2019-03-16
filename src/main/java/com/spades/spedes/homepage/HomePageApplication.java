@@ -9,7 +9,14 @@ public class HomePageApplication {
 
     @RequestMapping("/")
     public String home() {
-        return "Hello World!";
+        String result = "<html>\n";
+        result += "<head></head>\n";
+        result += "<body>\n";
+        result += "<p>Hello World!</p>\n";
+        result += "<a href=\"/logout\">Logout</a>\n";
+        result += "</body>\n";
+        result += "</html>";
+        return result;
     }
 
 }
